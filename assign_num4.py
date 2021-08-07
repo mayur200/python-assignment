@@ -1,3 +1,10 @@
+'''You have to write a program for an ATM. You know there are only denominations for 1,
+5, 10, 20, 100. Considering you have unlimited number of coins and notes in
+each denomination. For an input of X withdrawal amount, What is the
+minimum number of coins/notes for the ATM to dispense.
+Test 1:
+Input: X= 120
+Output : 2 {by 2 notes of 100 and 20 denomination}'''
 import collections
 
 def wtdAtm(amount):
@@ -7,13 +14,7 @@ def wtdAtm(amount):
     num = len(lst_denom)
      
     # Initialize Result
-    '''You have to write a program for an ATM. You know there are only denominations for 1,
-5, 10, 20, 100. Considering you have unlimited number of coins and notes in
-each denomination. For an input of X withdrawal amount, What is the
-minimum number of coins/notes for the ATM to dispense.
-Test 1:
-Input: X= 120
-Output : 2 {by 2 notes of 100 and 20 denomination}'''
+    
     
     ans = []
  
@@ -52,6 +53,4 @@ if __name__ == '__main__':
     amount = int(input("Input: X="))
     print("output:", amount, ": ", end = "")
     wtdAtm(amount)
-     
-# This code is contributed by
-# Surendra_Gangwar
+
